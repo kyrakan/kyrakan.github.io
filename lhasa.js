@@ -1,30 +1,3 @@
-function read() {
- document.getElementById('readmore').innerHTML="There's a relaxing teahouse culture – favorite local institutions have been serving the same brews for generations; a lively nightlife that mixes craft beer bars and super-hip clubs with Sichuan opera shows; and delicious food that is famous for its heat, history and variety even in cuisine-rich China, and is very much a point of pride: Chengdu is, after all, Unesco's first-ever City of Gastronomy. Oh, and as if that's not enough, this is the place to come to see China's cutest residents – the giant pandas."
-}
-function name(){
-  var a=prompt('please enter your first name:');
-  var b=prompt('please enter your last name:');
-  document.getElementById('form_name').innerHTML=a+b
-}
-
-
-
-var Gall=0;
-var Max=5;
-function GoLeft(){
-  Gall=Gall>0?Gall-1:Max;
-  MoveSlide();
-}
-function GoRight(){
-  Gall=Gall<Max?Gall+1:0;
-  MoveSlide();
-}
-function MoveSlide(){
-  document.getElementById("Gal_Slider").style.left="-"+(Gall*100)+"%";
-}
-
-
-
 function change(){
 var select=document.getElementById('jump');
 
@@ -33,20 +6,23 @@ select.style.textAlign="center";
 select.style.fontSize="50px";
 select.innerHTML='Sanya travel guide';
 }
-
-
-
-
 function time() {
 var d = new Date();
 document.getElementById("tx").innerHTML = d.toLocaleTimeString();
 }
 setInterval(time, 1000);
+function names(){
 
+  var a=prompt('please enter the first name:');
+  var b=prompt('please enter the second name');
+   document.getElementById('six').innerHTML= a+b
 
+} 
 
-
-
+function sum(){ var hotel=['the One&Only','the Sofitel Sanya Leeman','the Sanya EDITION beach hotels','Ritz-Carlton','Shangri-La'];
+var name=prompt('enter your name');
+var choice=parseInt(prompt('choose 0 for the One&Only ,choose 1 for the Sofitel Sanya Leeman,choose 2 for the Sanya EDITION beach hotels,choose 3 for Ritz-Carlton,choose 4 for Shangri-La'));
+document.getElementById('fjc').innerHTML=name+ " "+'likes'+" "+hotel[choice]}
 function content(){
   var select=document.getElementById('one')
   select.innerHTML='The One&Only';
@@ -73,32 +49,6 @@ function contenttttt(){
   var select=document.getElementById('five')
   select.innerHTML='Shangri-La';
 }
-
-
-
-
-function names(){
-
-  var a=prompt('please enter the first name:');
-  var b=prompt('please enter the second name');
-   document.getElementById('six').innerHTML= a+b
-
-} 
-
-function sum(){ var hotel=['the One&Only','the Sofitel Sanya Leeman','the Sanya EDITION beach hotels','Ritz-Carlton','Shangri-La'];
-var name=prompt('enter your name');
-var choice=parseInt(prompt('choose 0 for the One&Only ,choose 1 for the Sofitel Sanya Leeman,choose 2 for the Sanya EDITION beach hotels,choose 3 for Ritz-Carlton,choose 4 for Shangri-La'));
-document.getElementById('fjc').innerHTML=name+ " "+'likes'+" "+hotel[choice]}
-
-
-
-
-
-
-
-
-
-
 function one() {
   window.alert("Widely rated as one of China's best beaches, Dàdōnghǎi is a few miles down the coast from Sanya and occupies a stunning bay, with pure blue waters. It fills up in peak season, but when the crowds aren't too heavy, it's a wonderful place to be.")}
 
@@ -125,8 +75,7 @@ function six() {
 function seven() {
   window.alert("Built between the 5th century B.C. and the 16th century, the Great Wall of China is a stone-and-earth fortification created to protect the borders of the Chinese Empire from invading Mongols. The Great Wall is actually a succession of multiple walls spanning approximately 4,000 miles, making it the world's longest manmade structure.");
 }
-
-
+//
 $('.slider').each(function() {
   var $this = $(this);
   var $group = $this.find('.slide_group');
@@ -216,9 +165,54 @@ $('.slider').each(function() {
   
   advance();
 });
+//kyra
+function entername(){
+	var a = prompt('Enter your name here:');
+	document.getElementById('formname').innerHTML= a;
+}
+function age(){
+  var a=prompt('please enter your age:');
+  document.getElementById('formage').innerHTML=a+" "+"years"+" "+"old";
+}
+function heart(){
+  var a=prompt('If you do not have heart Disease,please type "No".If you have heart diease please tell us.');
+  document.getElementById('formheart').innerHTML=a
+}
+function respiratory(){
+  var a=prompt('If you do not have respiratory disease,please type "No".If you have respiratory disease please tell us.');
+  document.getElementById('formrespiratory').innerHTML=a
+}
+function read() {
+ document.getElementById('readmore').innerHTML="There's a relaxing teahouse culture – favorite local institutions have been serving the same brews for generations; a lively nightlife that mixes craft beer bars and super-hip clubs with Sichuan opera shows; and delicious food that is famous for its heat, history and variety even in cuisine-rich China, and is very much a point of pride: Chengdu is, after all, Unesco's first-ever City of Gastronomy. Oh, and as if that's not enough, this is the place to come to see China's cutest residents – the giant pandas.";
+}
+window.addEventListener('load', function() {
+	
+	// setTimeout to simulate the delay from a real page load
+	setTimeout(lazyLoad, 1000);
+	
+});
 
-
-
+function lazyLoad() {
+	var card_images = document.querySelectorAll('.card-image');
+	
+	// loop over each card image
+	card_images.forEach(function(card_image) {
+		var image_url = card_image.getAttribute('data-image-full');
+		var content_image = card_image.querySelector('img');
+		
+		content_image.src = image_url;
+		
+		// listen for load event when the new photo is finished loading
+		content_image.addEventListener('load', function() {
+			// swap out the visible background image with the new fully downloaded photo
+			card_image.style.backgroundImage = 'url(' + image_url + ')';
+			// add a class to remove the blur filter to smoothly transition the image change
+			card_image.className = card_image.className + ' is-loaded';
+		});
+		
+	});
+	
+}
 
 
 

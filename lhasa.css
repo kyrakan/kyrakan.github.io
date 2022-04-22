@@ -1,3 +1,334 @@
+#title123{
+  font-size: 70px;
+  color: white;
+  font-family: cursive;
+  font-style: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px gray;
+}
+.web{
+  text-decoration: none;
+}
+.cardlg{
+  padding: 20px 16px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-beginning;
+}
+.cards {
+  padding-left: 220px;
+  height: 232px;
+  margin: 0 -88px 0 0;
+  display: flex;
+  align-self: flex-end;
+}
+.cardb {
+background-size: cover; 
+background-position: center center;
+  border-radius: 8px;
+  width: 200px;
+  height: 300px; 
+  margin: 0 8px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cardb:hover{
+  margin: -8px 8px 0;
+}
+ .cardtextp {
+  font-family:cursive;
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+
+  }
+  
+  .cardtexth {
+    font-family:cursive;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    color: white;
+  } 
+
+/*lhasa*/
+.tab-bar {
+
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+
+}
+
+
+.tab {
+  width: 150px;
+  padding: 20px 0;
+  background: white;
+  color: #607D8B;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  margin-top: 0px;
+}
+.tab:hover{
+  background-color: lightgray;
+}
+.connection{
+  text-decoration: none;
+}
+
+.indicator {
+  width: 150px;
+  height: 3px;
+  background: #2196F3;
+  position: absolute;
+  margin-top: 58px;
+  margin-left:0;
+}
+#header{
+  padding-left: 380px;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+#tibetmingzi{
+  color: white ;
+font-family: cursive;
+font-size: 80px;
+text-shadow:1px 1px 1px white;
+margin-top: 80px;
+}
+.intro{
+  font-size: 20px;
+  font-family: cursive;
+  background-color:white;
+  opacity: 0.5;
+}
+.colwmnla{
+  float: left;
+  width: 50%;
+  text-align:center;
+}
+.basicla{
+  font-family: cursive;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+  padding-top: 30px;
+}
+#following{
+  float: left;
+  width: 100%;
+}
+.basicinformation{
+  font-family: cursive;
+  color: white;
+  font-size: 40px;
+}
+#littlewords{
+  color: white;
+  font-family: cursive;
+}
+.colwmnform{
+  float: left;
+  width: 33.3%;
+
+}
+.quesform{
+  color: white;
+  margin-left: 100px;
+  font-family: cursive;
+  font-size: 25px;
+  padding-top: 30px;
+}
+#formname{
+  display: inline;
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+  margin-left: 100px;
+}
+#formheart{
+  color: white;
+  margin-left: 100px;
+}
+#formage{
+  color: white;
+  margin-left: 100px;
+}
+#formrespiratory{
+  color: white;
+  margin-left: 100px;
+}
+#date{
+  color: white;
+  margin-left: 100px;
+  font-family: cursive;
+  font-size: 25px;
+}
+#endform{
+  float: left;
+  width: 100%;
+}
+/*attractions*/
+#attractions{
+  font-family: cursive;
+  color: white;
+  font-size: 40px;
+}
+#foot{
+  float: left;
+  width: 100%;
+}
+/*sichuan bar*/
+.sichuanbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00a087;
+}
+.sibar{
+  padding-right: 40px;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+  opacity: 0.8;
+}
+#siheader{
+  margin-left: 535px;
+}
+
+
+
+/*sichuan traveling*/
+.mingzi{
+color:#00a087; ;
+font-family: cursive;
+font-size: 80px;
+text-shadow:1px 1px 1px white;
+margin-top: 80px;
+}
+#siintro{
+  font-family: cursive;
+  margin: 30px 50px 30px 50px;
+  display: inline;
+}
+#readmore{
+  font-family: cursive;
+  margin: 30px 50px 30px 50px;
+  display: inline;
+  color: black;
+}
+/*panda*/
+.panda{
+  font-family: cursive;
+  color: white;
+  font-size: 50px;
+ padding-top: 100px;
+}
+#map{
+  float: left;
+  margin-left: 50px;
+  font-family: cursive;
+  font-size: 30px;
+  color: white;
+}
+.pandaintro{
+  color: white;
+  font-size: 30px;
+  font-family: cursive;
+  text-indent: 50px;
+  line-height: 85px;
+  text-shadow:2px 2px 2px darkgreen;
+  padding-left: 50px;
+}
+/* sichuan jingdian  */
+.card-image {
+  display: block;
+  min-height: 20rem; /* layout hack */
+  background: #fff center center no-repeat;
+  background-size: cover;
+  filter: blur(3px); /* blur the lowres image */
+}
+
+.card-image > img {
+  display: block;
+  width: 100%;
+  opacity: 0; /* visually hide the img element */
+}
+
+.card-image.is-loaded {
+  filter: none; /* remove the blur on fullres image */
+  transition: filter 1s;
+}
+
+
+
+
+/* Layout Styles */
+
+
+.card-list {
+  display: block;
+  margin: 1rem auto;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.card {
+  display: inline-block;
+  width: 90%;
+  max-width: 20rem;
+  margin: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+  display: block;
+  padding: 1em 0.5em;
+  color: #515151;
+  text-decoration: none;
+}
+
+.card-description > h2 {
+  margin: 0 0 0.5em;
+}
+
+.card-description > p {
+  margin: 0;
+}
+
+
+
+
+/*miranda*/
 .blue{color: steelblue;font-family:Roboto Slab;margin-top: 20px;margin-left: 50px;margin-right: 50px;margin-buttom: 50px;font-size: 25px;}
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
@@ -98,7 +429,7 @@ table th {
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section {
@@ -146,39 +477,39 @@ span {
   display: block;
 }
 .photo-stack {
-	position: relative;
-	margin: 0 4% 2em;
+  position: relative;
+  margin: 0 4% 2em;
   display: block;
 }
 .photo-stack:before,
 .photo-stack:after,
 .photo-stack img {
-	display: block;
-	background: #ccc;
-	border: 5px solid #fff;
+  display: block;
+  background: #ccc;
+  border: 5px solid #fff;
   border-radius: 3px;
-	padding: 1px;
-	
+  padding: 1px;
+  
 }
 .photo-stack:before,
 .photo-stack:after {
   content: '';
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background: #969289;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #969289;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
   transform: rotate(6deg);
 }
 .photo-stack:after {
-	transform: rotate(10deg);
+  transform: rotate(10deg);
   z-index: -1;
 }
 .photo-stack img {
-	transform: rotate(0deg);
-	width: 100%;
+  transform: rotate(0deg);
+  width: 100%;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2),
               0 14px 18px -12px rgba(0, 0, 0, 0.9);
 }
@@ -633,7 +964,7 @@ transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   content:"Close"
 }
 
-.name{background-size:width:50% ; height:15%; box-shadow:10px 10px 5px #ccc; 
+.ws{background-size:width:50% ; height:15%; box-shadow:10px 10px 5px #ccc; 
   background-color:lightpink;font-family:'Quintessential', cursive ;
    font-size:380%; color:white;text-align: center;}
 }
